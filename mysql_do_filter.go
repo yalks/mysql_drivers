@@ -42,10 +42,10 @@ func injectTenantComment(sql, tenantDB string) string {
 
 	// Create tenant routing comment
 	comment := fmt.Sprintf("/* tenant_db:%s */ ", tenantDB)
-	
+
 	// Handle different SQL statement types
 	sql = strings.TrimSpace(sql)
-	
+
 	switch {
 	case strings.HasPrefix(strings.ToUpper(sql), "SELECT"):
 		return comment + sql
