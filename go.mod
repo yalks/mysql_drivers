@@ -1,4 +1,4 @@
-module github.com/gogf/gf/contrib/drivers/mysql/v2
+module github.com/yalks/mysql_drivers
 
 go 1.22
 
